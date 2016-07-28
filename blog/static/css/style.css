@@ -8,7 +8,7 @@ h1 a {
 }
 
 .page-header {
-    background-color: #ff9400;
+    background-color: transparent;
     margin-top: 0;
     
     padding: 10px 20px 20px 40px;
@@ -45,4 +45,20 @@ h1 a {
 }
 h1, h2, h3, h4 {
     font-family: 'Lobster', cursive;
+}
+.height{
+    height: 100px;
+}
+.background{
+    background-image: url(../img/image2.jpg);
+    background:cover;
+    background-repeat: no-repeat;
+    max-width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.font{
+    font-size: 80px;
+    font-weight: 60px;
+    color: #FB0650;
 }

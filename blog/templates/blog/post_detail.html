@@ -1,13 +1,26 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="large-12 columns">
+<div class="large-2 columns"><br></div>
+<div class="large-8 columns">
+
     <div class="post">
-        {% if post.published_date %}
+       
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="fa fa-pencil" aria-hidden="true"></span></a>
+
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+         {% if post.published_date %}
             <div class="date">
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
+        <hr>
+    </div>
+    </div>
+    <div class="large-2 columns"><br></div>
+
     </div>
 {% endblock %}
+<i class="fa fa-pencil" aria-hidden="true" ></i></a>

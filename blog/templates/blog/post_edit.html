@@ -1,9 +1,16 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
+<div class="large-12 columns">
+<div class="large-2 columns"><br></div>
+<div class="large-8 columns">
     <h1>New post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
     </form>
+    </div>
+    <div class="large-2 columns"><br></div>
+
+    </div>
 {% endblock %}
